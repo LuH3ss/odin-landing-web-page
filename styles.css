@@ -1,5 +1,17 @@
 :root {
-    
+   --hero-footer-bckgrnd: #1F2937;
+   --Main-text: #F9FAF8;
+   /*48PX EXTRA-BOLD*/
+   --secondary-text: #E5E7EB;
+   /*18PX*/
+   --header-text: #F9FAF8;
+   /*24px*/
+   --bttn-color: #3882F6;
+   --random-title: #1F2937;
+   /*36px extra-bold*/
+   --inspiring-bckgrnd: #E5E7EB;
+   --inspiring-text: #1F2937;
+   /*36px light italic*/
 }
 
 * {
@@ -10,6 +22,99 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--hero-footer-bckgrnd);
+    color: var(--header-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo {
+ font-weight: bold;
+ margin-left: 2.5%
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.presentation--container {
+    background-color: var(--hero-footer-bckgrnd);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 220px;
+    
+}
+
+
+
+.pres-text {
+width: 200px;
+color: var(--Main-text);
+
+}
+.pres-text h1 {
+    font-size: 2.4em;
+}
+
+.pres-text .sign-up-bttn {
+  background-color: var(--bttn-color);
+  color: var(--Main-text);
+  padding: 2px 13px;
+  font-size: 1.0em;
+  border-radius: 5px;
+  border-style: none;
+
+}
+
+.pres-img {
+    background-color: var(--inspiring-bckgrnd);
+    width: 190px;
+    height: 120px;
+}
+
+.random--container {
+    height: 300px;
    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.random--title {
+    margin: 8px;
+}
+
+.random--info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 412px;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.random {
+   text-align: center;
+}
+.image--random {
+    width: 87px;
+    height: 88px;
+    border-style: solid;
+    
+    border-color: var(--bttn-color);
+    border-radius: 10px;
+
 }
