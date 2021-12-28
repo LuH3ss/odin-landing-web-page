@@ -27,11 +27,17 @@ html {
 
 header {
     background-color: var(--hero-footer-bckgrnd);
-    color: var(--header-text);
+    display: flex;
+    justify-content: center;
+  
+}
+
+.header--container{
+    width: 470px;
+ color: var(--header-text);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     font-size: 1.2em;
 }
 
@@ -49,14 +55,20 @@ header ul {
 .presentation--container {
     background-color: var(--hero-footer-bckgrnd);
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   
+    justify-content: center;
     align-items: center;
     height: 220px;
     
 }
 
-
+.presentation {
+    height: 218px;
+    max-width: 420;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .pres-text {
 width: 200px;
